@@ -3,6 +3,7 @@
   "productName": "Snarkcade",
   "version": "0.0.0",
   "description": "My sublime app",
+  "main": "main.js",
   "license": "MIT",
   "repository": "donutdespair/snarkcade",
   "author": {
@@ -30,7 +31,8 @@
   "devDependencies": {
     "devtron": "^1.1.0",
     "electron-packager": "^8.0.0",
-    "electron": "^1.3.3",
+    "electron": "^1.4.13",
+    "electron-prebuilt": "^1.4.13",
     "xo": "^0.16.0"
   },
   "xo": {
