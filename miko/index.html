@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div id="overallWrapper">
+        <div id=beginning>
+            <h2 id=vortLudoTitle>Vortludo</h2>
+            <div class="innerDivsWithText">
+                <h3>Learn Esperanto! <br>
+                    A logical, rich, and easy language!</h3>
+                <br>
+                <div id=gamePlay>
+                    <h3>Game Play:</h3>
+                    <ol>
+                        <li>1. Enter Your Level</li>
+                        <li>2. Read The Lesson</li>
+                        <li>3. Wrong Answer = Game Over</li>
+                        <li>4. Beat the clock!</li>
+                    </ol>
+                </div>
+
+
+            </div>
+            <button id="enterLevel1Button">Level 1</button>
+        </div>
+        <div id="pronounciationWrapper">
+            <div class="closePronounciation">X</div>
+
+            <div id="pronounciation">
+
+                <div id="tableTogglers">
+                    <button id="uniqueConsonantsToggler" class="pronounciationButtons"> Unique Consonants</button>
+                    <button id="vowelsToggler" class="pronounciationButtons">Vowels</button>
+                    <button id="diphthongsToggler" class="pronounciationButtons">Diphthongs</button>
+                    <button id="samePronounciationToggler" class="pronounciationButtons">Same Pronounciation</button>
+                </div>
+
+                <div id="uniqueConsonantsTable" class="tableDiv" s>
+                    <table>
+                        <tr>
+                            <th>
+                                Letter
+                            </th>
+                            <th>
+                                IPA Symbol
+                            </th>
+
+                            <th>
+                                Like in...
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cc
+                            </td>
+                            <td>
+                                [ts]
+                            </td>
+                            <td>
+                                ca<span class="likeIn">ts</span>, pi<span class="likeIn">zz</span>a
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ĉĉ
+                            </td>
+                            <td>
+                                [t͡ʃ]
+                            </td>
+                            <td>
+                                <span class="likeIn">ch</span>eerios, ke<span class="likeIn">tch</span>up
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gg
+                            </td>
+                            <td>
+                                [ɡ]
+                            </td>
+                            <td>
+                                <span class="likeIn">g</span>ood, <span class="likeIn">g</span>oats
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ĝĝ
+                            </td>
+                            <td>
+                                [d͡ʒ]
+                            </td>
+                            <td>
+                                <span class="likeIn">g</span>em, <span class="likeIn">j</span>ump
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ĥĥ
+                            </td>
+                            <td>
+                                [x]
+                            </td>
+                            <td>
+                                lo<span class="likeIn">ch</span>, ye<span class="likeIn">ch</span>(disgust!)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Jj
+                            </td>
+                            <td>
+                                [j]
+                            </td>
+                            <td>
+                                <span class="likeIn">y</span>es, <span class="likeIn">y</span>oung
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ĵĵ
+                            </td>
+                            <td>
+                                [ʒ]
+                            </td>
+                            <td>
+                                plea<span class="likeIn">s</span>ure, vi<span class="likeIn">s</span>ion
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Rr
+                            </td>
+                            <td>
+                                [r]
+                            </td>
+                            <td>
+                                r (trilled, but the American r ([ɹ]) is understood)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ŝŝ
+                            </td>
+                            <td>
+                                [ʃ]
+                            </td>
+                            <td>
+                                <span class="likeIn">sh</span>ampoo, poli<span class="likeIn">sh</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ŭŭ
+                            </td>
+                            <td>
+                                [ʃ]
+                            </td>
+                            <td>
+                                <span class="likeIn">w</span>eather, mostly used in vowel combinations(aŭ, eŭ)
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <br>
+                <div id="vowelsTable" class="tableDiv">
+                    <table border="1">
+                        <tr>
+                            <th>
+                                Letter
+                            </th>
+                            <th>
+                                IPA Symbol
+                            </th>
+
+                            <th>
+                                Like in...
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Aa
+                            </td>
+                            <td>
+                                [a]
+                            </td>
+                            <td>
+                                c<span class="likeIn">o</span>t, sp<span class="likeIn">a</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ee
+                            </td>
+                            <td>
+                                [e]
+                            </td>
+                            <td>
+                                b<span class="likeIn">e</span>t, sw<span class="likeIn">ea</span>t
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Ii
+                            </td>
+                            <td>
+                                [i]
+                            </td>
+                            <td>
+                                mach<span class="likeIn">i</span>ne, fr<span class="likeIn">ee</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Oo
+                            </td>
+                            <td>
+                                [o]
+                            </td>
+                            <td>
+                                f<span class="likeIn">o</span>rk, p<span class="likeIn">o</span>rk
+                                <br>These are actually: [ɔ]. American English doesn't have [o]
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Uu
+                            </td>
+                            <td>
+                                [u]
+                            </td>
+                            <td>
+                                b<span class="likeIn">oo</span>t, comp<span class="likeIn">u</span>te
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <br>
+                <div id="diphthongsTable" class="tableDiv">
+                    <table border="1">
+                        <tr>
+                            <th>
+                                Diphthong
+                            </th>
+                            <th>
+                                IPA Symbol
+                            </th>
+                            <th>
+                                Like in...
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                aj
+                            </td>
+                            <td>
+                                [ai̯]
+                            </td>
+                            <td>
+                                sk<span class="likeIn">y</span>, n<span class="likeIn">igh</span>t
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                aŭ
+                            </td>
+                            <td>
+                                [au̯]
+                            </td>
+                            <td>
+                                n<span class="likeIn">ow</span>, c<span class="likeIn">ow</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ej
+                            </td>
+                            <td>
+                                [ei̯]
+                            </td>
+                            <td>
+                                gr<span class="likeIn">ay</span>, pl<span class="likeIn">ay</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                eŭ
+                            </td>
+                            <td>
+                                [eu]
+                            </td>
+                            <td>
+                                - (rare sound, found in Eŭropo, eŭfemismo)
+                            </td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                oj
+                            </td>
+                            <td>
+                                [oi̯]
+                            </td>
+                            <td>
+                                b<span class="likeIn">oy</span>, enj<span class="likeIn">oy</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                uj
+                            </td>
+                            <td>
+                                [ui̯]
+                            </td>
+                            <td>
+                                ph<span class="likeIn">ooey</span>, g<span class="likeIn">ooey</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+
+                <br>
+                <div id="samePronounciationTable" class="tableDiv">
+                    <table border="1">
+                        <tr>
+                            <th>
+                                Same pronounciation as in English:
+                            </th>
+                            <td>
+                                Bb, Dd, Ff, Hh, Kk, Ll, Mm, Nn, Pp, Ss, Tt, Vv, Zz
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div id=lvl1LessonWrapper>
+            <div class="closelvl1Lesson">X</div>
+            <div id="lvl1LessonInternal">
+                <h2>Easy and Logical</h2>
+                <h3>Conjugations and suffixes</h3>
+                <table>
+                    <tr>
+                        <th>
+                            Word Type
+                        </th>
+                        <th>
+                            Esperanto Suffix
+                        </th>
+                        <th>
+                            Examples
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Nouns
+                        </td>
+                        <td>
+                            -o
+                        </td>
+                        <td>
+                            tablo, viro, strato
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Adjectives
+                        </td>
+                        <td>
+                            -a
+                        </td>
+                        <td>
+                            ruĝa, afabla, facila
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Present Tense Verbs
+                        </td>
+                        <td>
+                            -as
+                        </td>
+                        <td>
+                            manĝas, vidas, karesas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Past Tense Verbs
+                        </td>
+                        <td>
+                            -is
+                        </td>
+                        <td>
+                            fumis, dancis, vivis
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Future Tense Verbs
+                        </td>
+                        <td>
+                            -os
+                        </td>
+                        <td>
+                            loĝos, parolos, komprenos
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+        <div id="ending">
+            <div>
+                <h1 id="gameOverHeader">Game Over</h1>
+            </div>
+            <button id=tryAgain>Try again?</button>
+
+        </div>
+
+        <div id="lvl1">
+
+            <h2>Level 1:</h2>
+            <div class="innerDivsWithText">
+                <button class="pronounciationButton">Pronounciation</button><br>
+             <h3>Read lesson carefully before beginning:</h3>
+                <button class="lvl1LessonButton" id="lvl1LessonFirstButton">Level 1 Lesson</button>
+                <button id="beginGameButton">Begin Game</button>
+
+
+            </div>
+        </div>
+
+
+        <div class="gameContainer">
+
+
+            <div id="progressOuter">
+                <div id="progressInner"></div>
+            </div>
+            <div id="timer"></div>
+
+            <div id="upperArea">
+                <h4><div id="english"></div></h4>
+                <h4><div id="esperanto"></div></h4>
+            </div>
+            <div id="lowerArea">
+
+                <div id="userInput"></div>
+                <div id="inbetweenQuestions">
+
+                    <div>
+                        <h3>Correct answer was chosen.</h3>
+                    </div>
+                    <button class="questionToggler">Next Question</button>
+                    <button class="pronounciationButton">Pronounciation</button>
+                    <button class="lvl1LessonButton">Level 1 Lesson</button>
+
+
+                </div>
+
+                <div id=victory>
+                    <h3>A winner is you!</h3>
+                    <br>
+                    <h3>You can practice more at:</h3>
+                    <br>
+
+                    <a href="http://learn.esperanto.com/en/">Esperanto in 12 Days</a>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=mWbyXVSiCxw">Mazi en Gondolando</a>
+                    <br>
+                    <a href="http://www.kurso.com.br/index.php?en">Downlaod Kurso de Esperanto</a> </div>
+            </div>
+        </div>
+
+        <audio>
+            <source id="successAudio" src="./snd/success.mp3"></source>
+        </audio>
+        <audio>
+            <source src="./snd/wrong.mp3"></source>
+        </audio>
+        <audio>
+            <source src=./snd/youWon.mp3>
+        </audio>
+        </audio>
+
+
+        <!--source for success.mp3 https://www.freesound.org/people/grunz/sounds/109663/
+          source for wrong.mp3 https://www.freesound.org/people/KevinVG207/sounds/331912/
+        -->
+
+    </div>
+
+<script>window.$ = window.jQuery = require('./js/jquery.js');</script>
+
+<!-- <script src="./jquery.js"></script>
+ -->
+<script src="./js/script.js"></script>
+</body>
+</html>
