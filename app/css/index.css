@@ -12,10 +12,8 @@ header {
 	position: absolute;
 	width: 500px;
 	height: 250px;
-	top: 50%;
-	left: 50%;
-	margin-top: -125px;
-	margin-left: -250px;
+	top: 10%;
+	left: 20%;
 	text-align: center;
 }
 
@@ -24,4 +22,16 @@ header h1 {
 	font-weight: 100;
 	margin: 0;
 	padding: 0;
+}
+
+.minbutton {
+	position: absolute;
+	top: 1%;
+	left: 93%;
+}
+
+.closebutton {
+	position: absolute;
+	top: 1%;
+	left: 96%;
 }

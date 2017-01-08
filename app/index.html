@@ -4,16 +4,19 @@
 		<meta charset="utf-8">
 		<title>Snarkcade</title>
 		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 		<script src="../index.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<header>
-			<button id="minus" onclick="minimizeWin()">minimize</button>
-    <button id="close" onclick="closeWin()">close</button>
-				<h1>Games Go Here</h1>
 
+
+			<button class="minbutton" onclick="minimizeWin()">-</button>
+    <button class="closebutton" onclick="closeWin()">x</button>
+
+							<header>
+				<h1>Games Go Here</h1>
 			</header>
+					<div class="container">
 			<section class="main"></section>
 			<footer></footer>
 		</div>
