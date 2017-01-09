@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Don't Be Late</title>
+  <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto" rel="stylesheet">
+  <link href="../css/index.css" rel="stylesheet" type="text/css">
+  <link href="./style.css" rel="stylesheet" type="text/css">
+  <script src= "../js/index.js"></script>
+
+</head>
+<body>
+<!-- <button class="minbutton" onclick="min()"> - </button> only the close seems to work?-->
+<button class="closebutton" onclick="bye()">x</button>
+<h1>Don't Be Late</h1>
+  <!-- left navigation image -->
+  <img id="navLeft" src="./images/arrowLeft.png">
+
+  <!-- the main container holds the game and game items in the center -->
+  <div class="mainContainer">
+    <!-- instruction 'page' that will appear as the game loads -->
+    <div class='instructions'>
+      <p>You’ve used up all your excuses and your boss<br>
+      will fire you if you’re late one more time!<br>
+      Quickly find the items before your train arrives.</p>
+      <p>Click around to locate items before time runs out.<br>
+      Good Luck and DON'T BE LATE!</p><br>
+      <!-- start button -->
+      <button id='start'>Start</button>
+    </div>
+    <!-- right navigation image-->
+    <div class='livingRoom'>
+      <div class='plant' id='itemContainer1'></div>
+      <div class='ottomon' id='itemContainer4'></div>
+      <div class='bag'></div>
+    </div>
+    <div class='bedroom'>
+      <div class='pileOfDirtyLaundry' id='itemContainer2'></div>
+      <div class='luggage' id='itemContainer3'></div>
+      <div class='fridge' id='itemContainer5'></div>
+    </div>
+
+    <!-- item divs -->
+    <div class='items' id='cellphone'></div>
+    <div class='items' id='keys'></div>
+    <div class='items' id='wallet'></div>
+    <div class='items' id='money'></div>
+    <div class='items' id='metrocard'></div>
+
+  </div> <!--end of main container -->
+
+  <!-- right navigation image-->
+  <img id="navRight" src="./images/arrowRight.png">
+
+  <!-- list of inventory slots-->
+  <div class="bagInv">
+    <div class='inventory' id='iSlot1'></div>
+    <div class='inventory' id='iSlot2'></div>
+    <div class='inventory' id='iSlot3'></div>
+    <div class='inventory' id='iSlot4'></div>
+    <div class='inventory' id='iSlot5'></div>
+  </div>
+
+  <!-- timer-->
+  <div class='clock'>
+    <div id='minutes'></div>
+    <div id='seconds'></div>
+  </div>
+</body>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script src="./script.js"></script>
+</html>
