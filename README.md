@@ -118,7 +118,7 @@ Go inside your finder and run your file. Feel free to go wireless. Ain't that ni
 
 Man! That's a lot of things for set up... (TL;DR)
 ------
-Tell me about it... well, here's quick
+Tell me about it... well, here's a quick run through
 + Here's a good list of [boiler plates](http://electron.atom.io/community/#boilerplates)
 + We've used and thus recommend cloning and forking [electron-quick-start](https://github.com/electron/electron-quick-start) repository.
 
@@ -134,11 +134,13 @@ Resources
 Errors and Debugs
 ------
 Some errors we ran into where:
-+ *Loading jQuery*: Usually the $ not found issues were due to packaging node. A work around is turning off node integration (this messes with all your require functions on your render scripts) or requiring jQuery npm package (which defaults to jQuery as a script handler, which will also mess with your render scripts, but hey, at least you have jQuery and node packages). More details can be found [here](http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined).
-+ *Naming things*: Versions of Electron are still being updated, so some of the boilerplates you find out there won't work properly or will have items named differently. Please name your launch point main.js and adjust your package.json accordingly. Also don't name your file electron, npm really hates when you do that.
-+ *Routing issues*: After loading a url into the browser window, errors displayed when attempting to change the file path "Attempting to call a function in a renderer window that has been closed or released. Function provided here: undefined." Turns out this is due to the same jQuery loading error. You lose all the functionality of your index.js page when this happens. Which is a problem when you have your menu page set there... Choose wisely.
++ **Loading jQuery**: Usually the $ not found issues were due to packaging node. A work around is turning off node integration (this messes with all your require functions on your render scripts) or requiring jQuery npm package (which defaults to jQuery as a script handler, which will also mess with your render scripts, but hey, at least you have jQuery and node packages). More details can be found [here](http://stackoverflow.com/questions/32621988/electron-jquery-is-not-defined).
++ **Naming things**: Versions of Electron are still being updated, so some of the boilerplates you find out there won't work properly or will have items named differently. Please name your launch point main.js and adjust your package.json accordingly. Also don't name your file electron, npm really hates when you do that.
++ **Routing issues**: After loading a url into the browser window, errors displayed when attempting to change the file path "Attempting to call a function in a renderer window that has been closed or released. Function provided here: undefined." Turns out this is due to the same jQuery loading error. You lose all the functionality of your index.js page when this happens. Which is a problem when you have your menu page set there... Choose wisely.
  + Or you could set the menu pages in your main.js file, this is still a bit buggy though.
-+ *Packaging*: electron-packager
++ **Packaging**: Just a quick note, if you're running
+```bash electron-packager . --all ``` on a Mac OS, you will have to download [Wine](https://www.winehq.org/) from homebrew (make sure to have extra time for this, it takes anywhere from 10 minutes to an hour). Wine is needed to compress the Windows files for distribution. Setup will crash if it isn't installed before hand. If you prefer to just have a Mac app file. just run ```bash electron-packager . ```
+
 
 ## License
 
