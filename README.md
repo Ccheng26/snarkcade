@@ -29,7 +29,7 @@ npm install
 npm start
 ```
 
-or download here
+Download for [iOS](https://www.dropbox.com/s/2r36z8d9igkjbbc/Snarkcade.app.zip?dl=0) or [Windows](https://www.dropbox.com/s/gyg83tu4qn8u5ri/Snarkcade.exe?dl=0)
 
 Electron FAQ
 ======
