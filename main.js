@@ -85,6 +85,6 @@ exports.openConnie = () => {
 }
 
 exports.openCarson= () => {
-  let carson = new BrowserWindow({width: 412, height: 732})
+  let carson = new BrowserWindow({width: 900, height: 900})
   carson.loadURL(`file://${__dirname}/carson/index.html`)
 }

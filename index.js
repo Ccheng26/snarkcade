@@ -1,5 +1,8 @@
+
+
 const remote = require('electron').remote
 const main = remote.require('./main.js')
+
 
 var mikoButton = document.createElement('button')
 mikoButton.textContent = 'Miko\'s Game'
