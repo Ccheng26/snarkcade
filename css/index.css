@@ -24,6 +24,12 @@ header h1 {
 	padding: 0;
 }
 
+button{
+	width: 610px;
+	height: 420px;
+	background-repeat: no-repeat;
+}
+
 .minbutton {
 	position: absolute;
 	top: 1%;
