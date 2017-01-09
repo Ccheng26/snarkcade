@@ -24,11 +24,24 @@ header h1 {
 	padding: 0;
 }
 
-button{
+#buttonev{
 	width: 610px;
 	height: 420px;
 	background-repeat: no-repeat;
 }
+
+#buttondbl{
+	width: 610px;
+	height: 420px;
+	background-repeat: no-repeat;
+}
+
+#buttondk{
+	width: 610px;
+	height: 420px;
+	background-repeat: no-repeat;
+}
+
 
 .minbutton {
 	position: absolute;
