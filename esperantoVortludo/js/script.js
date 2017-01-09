@@ -1,5 +1,5 @@
-const remote = require('electron').remote
-const main = remote.require('./main.js')
+// const remote = require('electron').remote
+// const main = remote.require('./main.js')
 
 // let button = document.createElement('button')
 // button.textContent = 'Save \'em'

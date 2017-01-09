@@ -4,7 +4,7 @@ const electron = require('electron')
 // const app = electron.app
 // const BrowserWindow = electron.BrowserWindow
 // or you can use ES6 destructuring
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu, MenuItem} = require('electron')
 
 // call this function, on ready
 app.on('ready', () => {
@@ -15,9 +15,73 @@ app.on('ready', () => {
 		frame: false
 	})
   // this will load a window for us, you can put any url in here like 'http://google.com' or you can use a file path
-  mainWindow.loadURL(`file://${__dirname}/index.html`)
+
   // file://${__dirname} checks in our local directory, remember to use backticks ` for this
+  mainWindow.loadURL(`file://${__dirname}/index.html`)
+
+  global.loadPage = function(path) {
+  	mainWindow.removeAllListeners();
+  	mainWindow.loadURL(`file://${__dirname}/${path}index.html`)
+  }
+const menu = new Menu.buildFromTemplate([
+	{
+		menu: 'snarkcade',
+		submenu: [
+		{
+			label: 'Minimize',
+			accelerator: 'CmdOrCtrl+M',
+			role: 'minimize'
+		},
+		{
+			label:'Esperanto Vortludo',
+			click: function() {
+				game1()
+				}
+		},
+		{
+			label:'Dont Be Late',
+			click: function() {
+				game2()
+				}
+		},
+		{
+			label:'Drumkit',
+			click: function() {
+				game3()
+				}
+		},
+		{
+			label: 'Close',
+			accelerator: 'CmdOrCtrl+W',
+			role: 'close'
+		}
+	]
+	}
+])
+
+// attaches menu to application
+Menu.setApplicationMenu(menu);
+
+
+function min() {
+	mainWindow.minimize();
+};
+
+function bye() {
+	mainWindow.close();
+};
+
+
+
+ function game1() {
+ 	loadPage('esperantoVortludo/')
+	}
+ function game2() {
+  loadPage('dontBeLate/')
+	}
+ function game3() {
+  loadPage('drumkit/')
+	}
+
   // mainWindow.openDevTools();
-
-
 })
