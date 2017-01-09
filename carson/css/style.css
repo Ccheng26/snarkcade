@@ -1,224 +1,208 @@
-* {
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    text-align: center;
-    color: #009900;
 }
-html {
-    background: linear-gradient(to right, #E2FFE2, #c3f8c3)
+
+body{
+    background-color: black;
+    font-family: 'EB Garamond', serif;
+    cursor: crosshair;
 }
-#progressOuter {
-    background-color: #E9E9E9;
-    height: 20px;
-    width: 258px;
-    border: 1px solid #00E500;
-    display: inline-block;
-    text-align: left;
-    /*for progress bar to start from the left*/
-}
-#progressInner {
-    background-color: #009900;
-    height: 10px;
-    width: 0%;
-    display: inline-block;
-}
-#timer {
-    display: inline-block;
-    padding-left: 5px;
-    color: #4C0026;
-    font-size: 24px;
-}
-.gameContainer {
-    height: 500px;
-    width: 300px;
-    margin: 0 auto;
-    display: none;
-}
-#beginning,
-#ending #lvl1 {
-    height: 500px;
-    width: 300px;
-    margin: 0 auto;
-    display: block;
-}
-#gamePlay {
-    margin: 30px 10px 30px 10px;
-}
-#ending,
-#lvl1 {
-    display: none;
-}
-#gameOverHeader {
-    margin-bottom: 100px;
-}
-.innerDivsWithText {
-    margin: 5px 10px;
-}
-h2 {
-    font-size: 40px;
-    text-align: center;
-}
-p,
-li {
-    font-size: 20px;
-    text-align: justify;
-}
-button {
-    margin: 5% auto;
-    background-color: white;
-    box-shadow: 1px 1px #009900
-}
-button:hover,
-button:focus,
-button:active,
-button:focus:active {
-    border-radius: 50%;
-    padding: 10px;
-    box-shadow: 2px 2px #009900;
-    outline: none;
-}
-#enterLevel1Button,
-#beginGameButton,
-#tryAgain{
-    font-size: 30px;
-    display: block;
-    margin: 0 auto;
- border: 1px solid #004C00;
-}
-#lvl1LessonFirstButton {
+
+#startscreen{
+     margin: 0 auto;
+     width: 675px;
+     height: 675px;
+     position: relative;
+     top: -42px;
+     background-image: url('../img/background.jpg');
+     background-size: cover;
+   }
+#titletext{
+    font-family: font-family: 'EB Garamond', serif;
     font-size: 50px;
-    margin-bottom: 150px;
-}
-#pronounciationWrapper,
-#lvl1LessonWrapper {
-    display: none;
-    z-index: 1;
-    top: 0;
-    height: 500px;
-    width: 100%;
-    position: fixed;
-    margin: 0 auto;
-}
-#pronounciation,
-#lvl1LessonInternal {
-    background-color: white;
-    margin: 10% auto;
-    border: 1px solid #004C00;
-    top: 0;
-    z-index: 2;
-    opacity: 1;
-    height: 500px;
-}
-td,
-th,
-table {
-    border: 1px solid #004C00;
-    margin: 0 auto;
-}
-.tableDiv {
-    display: none;
-    margin: 0 auto;
-}
-.closePronounciation,
-.closelvl1Lesson {
+    text-align: center;
     color: white;
-    background-color: #4C0026;
-    text-align: center;
-    float: right;
-    font-size: 42px;
+    top: 2em;
     font-weight: bold;
-    border: 1px solid #004C00;
 }
-/*hover doesn't work on mobile*/
-
-.likeIn {
-    color: #4C0026;
-}
-#upperArea {
-    height: 50%;
-}
-#lowerArea {
-    height: 50%;
-}
-#inbetweenQuestions {
-    height: 50%;
-    display: none;
-    padding-top: 20px;
-}
-#victory {
-    height: 50%;
-    display: none;
-}
-#ulAnswers {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 30px;
-    height: 100%;
-    width: 100%;
-}
-#ulAnswers > li {
-    display: inline;
-}
-.booleanChecker,
-.blankButton,
-.pronounciationButtons,
-.lvl1LessonButton,
-.pronounciationButton,
-.questionToggler {
-    margin: 5%;
-    display: inline-block;
-    border: 1px solid #004C00;
-    font-size: 28px;
-    padding: 5px;
-}
-.blankButton,
-{
-    margin: 2%;
-}
-.questionToggler,
-{
-    font-size: 15px;
-}
-.pronounciationButton,
-.lvl1LessonButton {
-    font-size: 12px;
-}
-.pronounciationButtons {
-    height: 15%;
-    font-size: 15px;
-    margin: 2%;
-}
-#esperanto,
-#english,
-#inbetweenQuestions,
-#victory,
-#pronounciation #lvl1 {
-    padding-left: 10px;
+.maincontainer{
     margin: 0 auto;
-}
-#pronounciation {
-    margin-top: 50px;
-}
-ul {
-    list-style-position: inside;
-}
-a {
-    text-align: center;
-    margin-bottom: 10px;
-}
-td,
-th {
-    font-size: 20px;
-}
-.sentences {
-    padding-top: 50px;
-    font-size: 24px;
+    max-width: 640px;
+    position: relative;
+    top: 0;
 }
 
-#gamePlay > ol{
-    list-style-type:  none;
-    display:  table-cell;
+.display{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
-#gamePlay > ol >li{
-    text-align:  center;
+
+#startbutton{
+    width: 200px;
+    height: 100px;
+    position: relative;
+    top: 250px;
+    left:  240px;
+    background-color: indianred;
+    color: white;
+    border: solid gray;
+    border-radius: 20px;
+    opacity: 1;
+    font-size: 50px;
+    font-family: 'EB Garamond', serif;
+}
+
+.scoreboard{
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: -210px;
+    background-color: transparent;
+    border: dashed white;
+    position: absolute;
+    color: white;
+}
+#score{
+    position: absolute;
+    font-size: 25px;
+}
+#timer{
+    position: absolute;
+    font-size: 25px;
+    top:  50%;
+}
+
+.rat{
+    position: absolute;
+    top: 20px;
+    width: 160px;
+    height: 160px;
+    z-index: 10;
+}
+.hole{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+#rat1{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/1.png);
+    width: 160px;
+    height: 160px;
+}
+#rat2{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/2.png);
+    width: 160px;
+    height: 160px;
+}
+#rat3{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/3.png);
+    width: 160px;
+    height: 160px
+}
+#rat4{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/4.png);
+    width: 160px;
+    height: 160px
+}
+#rat5{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/5.png);
+    width: 160px;
+    height: 160px
+}
+#rat6{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/6.png);
+    width: 160px;
+    height: 160px
+}
+#rat7{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/7.png);
+    width: 160px;
+    height: 160px
+}
+#rat8{
+      position: absolute;
+      top: 20px;
+      background-image: url(../img/8.png);
+      width: 160px;
+      height: 160px
+}
+#rat9{
+    position: absolute;
+    top: 20px;
+    background-image: url(../img/9.png);
+    width: 160px;
+    height: 160px
+}
+#hole1{
+    position: absolute;
+    top: 15px;
+    left:  12px;
+}
+#hole2{
+    position: absolute;
+    top: 245px;
+    left:  12px;
+}
+#hole3{
+    position: absolute;
+    top: 478px;
+    left:  12px;
+}
+#hole4{
+    position: absolute;
+    top: 15px;
+    left: 247px;
+}
+#hole5{
+    position: absolute;
+    top: 245px;
+    left: 247px;
+}
+#hole6{
+    position: absolute;
+    top: 478px;
+    left: 247px;
+}
+#hole7{
+    position: absolute;
+    top: 15px;
+    left: 480px;
+}
+#hole8{
+    position: absolute;
+    top: 245px;
+    left: 480px;
+}
+#hole9{
+    position: absolute;
+    top: 478px;
+    left: 480px;
 }

@@ -36,3 +36,10 @@ app.on('ready', () => {
 })
 
 
+<<<<<<< HEAD
+=======
+exports.openCarson= () => {
+  let carson = new BrowserWindow({width: 900, height: 900})
+  carson.loadURL(`file://${__dirname}/carson/index.html`)
+}
+>>>>>>> 498e8bd6714bb269be6177d2bd3024f1c86d31b7
