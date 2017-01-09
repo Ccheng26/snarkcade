@@ -18,19 +18,19 @@ app.on('ready', () => {
   mainWindow.loadURL(`file://${__dirname}/index.html`)
   // file://${__dirname} checks in our local directory, remember to use backticks ` for this
   mainWindow.openDevTools();
-  exports.openMiko= () => {
-  let miko = mainWindow
-  miko.loadURL(`file://${__dirname}/miko/index.html`)
+  exports.openEsperanto= () => {
+  let esperanto = mainWindow
+  esperanto.loadURL(`file://${__dirname}/esperantoVortludo/index.html`)
 	}
 
-	exports.openConnie = () => {
- 	 let connie = mainWindow
- 	 connie.loadURL(`file://${__dirname}/connie/index.html`)
+	exports.openDbl = () => {
+ 	 let dbl = mainWindow
+ 	 dbl.loadURL(`file://${__dirname}/dontBeLate/index.html`)
 	}
 
-	exports.openCarson= () => {
- 	 let carson = mainWindow
- 	 carson.loadURL(`file://${__dirname}/carson/index.html`)
+	exports.openDrumkit= () => {
+ 	 let drumkit = mainWindow
+ 	 drumkit.loadURL(`file://${__dirname}/drumkit/index.html`)
 	}
 
 })

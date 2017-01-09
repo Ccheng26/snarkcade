@@ -49,24 +49,24 @@ function bye() {
 	mainWindow.close();
 };
 
-var mikoButton = document.createElement('button')
-mikoButton.textContent = 'Miko\'s Game'
-mikoButton.addEventListener('click', () => {
-  main.openMiko()
+var esperantoButton = document.createElement('button')
+esperantoButton.textContent = 'Esperanto Vortludo'
+esperantoButton.addEventListener('click', () => {
+  main.openEsperanto()
 }, false)
-document.body.appendChild(mikoButton)
+document.body.appendChild(esperantoButton)
 
 
-var connieButton = document.createElement('button')
-connieButton.textContent = 'Connie\'s Game'
-connieButton.addEventListener('click', () => {
-  main.openConnie()
+var dblButton = document.createElement('button')
+dblButton.textContent = 'Don\'t Be Late'
+dblButton.addEventListener('click', () => {
+  main.openDbl()
 }, false)
-document.body.appendChild(connieButton)
+document.body.appendChild(dblButton)
 
-var carsonButton = document.createElement('button')
-carsonButton.textContent = 'Carson\'s Game'
-carsonButton.addEventListener('click', () => {
-  main.openCarson()
+var drumkitButton = document.createElement('button')
+drumkitButton.textContent = 'Drum Kit'
+drumkitButton.addEventListener('click', () => {
+  main.openDrumkit()
 }, false)
-document.body.appendChild(carsonButton)
+document.body.appendChild(drumkitButton)
