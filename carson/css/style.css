@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background:url(http://www.metalsucks.net/wp-content/uploads/2015/10/icp-faygo-spray.jpg) bottom center;
+  background:url("../img/faygo.jpg") bottom center;
   background-size: cover;
 }
 body,html {
