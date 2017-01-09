@@ -1,0 +1,50 @@
+{
+  "name": "snarkcade",
+  "productName": "Snarkcade",
+  "version": "0.0.0",
+  "description": "My sublime app",
+  "main": "main.js",
+  "license": "MIT",
+  "repository": "donutdespair/snarkcade",
+  "author": {
+    "name": "Carson Hyde",
+    "email": "carsonmhyde@gmail.com",
+    "url": "github.com/donutdespair/snarkcade"
+  },
+  "contributors": [{
+    "name": "Connie Cheng",
+    "email": "connie.cheng52@gmail.com"
+  }],
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^1.0.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^8.0.0",
+    "electron": "^1.4.13",
+    "electron-prebuilt": "^1.4.13",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
