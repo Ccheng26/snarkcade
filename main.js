@@ -17,7 +17,7 @@ app.on('ready', () => {
   // this will load a window for us, you can put any url in here like 'http://google.com' or you can use a file path
   mainWindow.loadURL(`file://${__dirname}/index.html`)
   // file://${__dirname} checks in our local directory, remember to use backticks ` for this
-  mainWindow.openDevTools();
+  // mainWindow.openDevTools();
 
 
 })
