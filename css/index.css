@@ -35,3 +35,9 @@ header h1 {
 	top: 1%;
 	left: 96%;
 }
+
+.play {
+	display: inline-block;
+	position: relative;
+	margin: 15%;
+}
