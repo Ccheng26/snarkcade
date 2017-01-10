@@ -17,9 +17,6 @@ function bye() {
 };
 
 
- function game1() {
- 	newPage('esperantoVortludo/')
-	}
  function game2() {
   newPage('dontBeLate/')
 	}

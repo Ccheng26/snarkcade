@@ -79,9 +79,6 @@ function bye() {
 
 
 
- function game1() {
- 	loadPage('esperantoVortludo/')
-	}
  function game2() {
   loadPage('dontBeLate/')
 	}

@@ -149,6 +149,5 @@ MIT © [carson hyde](https://github.com/donutdespair/snarkcade)
 ## Contributors:
 **_Name_** | **_LinkedIn_** | **_GitHub_** | **_Email_**
 ---------| -------------|------------|------------
-Carson Hyde | [LinkedIn](https://www.linkedin.com/in/carsonmhyde) | [GitHub](https://github.com/donutdespair) |
-Connie Cheng | [LinkedIn](https://www.linkedin.com/in/ccheng52) | [GitHub](https://github.com/Ccheng26/) |
-Micheal Brandini | [LinkedIn](https://www.linkedin.com/in/) | [GitHub](https://github.com/) |
+Carson Hyde | [LinkedIn](https://www.linkedin.com/in/carsonmhyde) | [GitHub](https://github.com/donutdespair) | carsonmhyde@gmail.com
+Connie Cheng | [LinkedIn](https://www.linkedin.com/in/ccheng52) | [GitHub](https://github.com/Ccheng26/) | connie.cheng52@gmail.com
